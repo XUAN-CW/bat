@@ -70,13 +70,15 @@ setx "Path" "%Path%newpath1;" /m
 
 
 ```bash
+@echo off
 set EXISTS_FLAG=false
- %Path%|find "%~dp0">nul&&set EXISTS_FLAG=true
+echo %Path%|find "%~dp0">nul&&set EXISTS_FLAG=true
 if "%EXISTS_FLAG%"=="true" (
 	echo true
 ) else (
 	echo false
 )
+@cmd /k
 ```
 
 # 实用脚本
