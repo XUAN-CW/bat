@@ -77,7 +77,6 @@ if "%EXISTS_FLAG%"=="true" (
 ) else (
 	echo false
 )
-@cmd /k
 ```
 
 # 实用脚本
